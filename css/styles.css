@@ -1,119 +1,138 @@
 /* styles.css */
 
 body {
-    font-family: 'Roboto Slab', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f8fa;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #007B83;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  header h1 {
-    font-family: 'Francois One', sans-serif;
-    margin: 0;
-    font-size: 2em;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  .container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 20px;
-  }
-  
-  main {
-    padding: 30px 20px;
-  }
-  
-  main h2 {
-    color: #007B83;
-    font-family: 'Francois One', sans-serif;
-    margin-top: 30px;
-  }
-  
-  form input, form textarea {
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  form input[type="submit"] {
-    background-color: #007B83;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  form input[type="submit"]:hover {
-    background-color: #005f66;
-  }
-  
-  footer {
-    text-align: center;
-    background-color: #e1eaea;
-    color: #333;
-    padding: 15px 0;
-    font-size: 0.9em;
-  }
-  
-  .social-links {
-    margin-top: 15px;
-  }
-  
-  .social-links a {
-    color: #007B83;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  .social-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    background-color: #04464b;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f8fa;
+  color: #333;
+  line-height: 1.6;
+}
 
-  .cta-button:hover {
-    background-color: #005f63;
-  }
+header {
+  background-color: #007b83;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Francois One", sans-serif;
+  margin: 0;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+main {
+  padding: 30px 20px;
+}
+
+main h2 {
+  color: #007b83;
+  font-family: "Francois One", sans-serif;
+  margin-top: 30px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #007b83;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #005f66;
+}
+
+footer {
+  text-align: center;
+  background-color: #e1eaea;
+  color: #333;
+  padding: 15px 0;
+  font-size: 0.9em;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  color: #007b83;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #04464b;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #005f63;
+}
+
+/*Contact*/
+.tel-link {
+  background-color: #007b83;
+  padding: 0.1%;
+  margin: 0 0;
+  width: 12%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.tel-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+ 
+}
