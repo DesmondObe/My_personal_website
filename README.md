@@ -17,10 +17,10 @@ The goal of this portfolio is to:
 - Highlight key projects, publications, and recognitions
 - Serve as a central hub for contact and collaboration
 
-## Live Site
+# Live Site
 My live portfolio is github.com/DesmondObe
 
 # Contact
-For collaboration, mentorship, or inquiries, feel free to connect via LinkedIn or email me at mailto:desmondobe001@gmail.com.
+For collaboration, mentorship, or inquiries, feel free to connect via LinkedIn or email:
 LinkedIn: https://www.linkedin.com/in/desmond-obe-059559139.
 Email: desmondobe001@gmail.com.
