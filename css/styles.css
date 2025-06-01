@@ -52,10 +52,43 @@ nav a:hover {
 main {
   padding: 30px 20px;
 }
-.profile-container img {
-  width: 600px;
-  height: 550px;
-  border-radius: 550px;
+/* Flex layout for intro section */
+.intro-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .intro-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-image {
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 
 main h2 {
@@ -138,5 +171,101 @@ footer {
   text-decoration: none;
   font-size: 1.5em;
   display: block;
- 
+}
+
+.hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.intro-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.intro-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 280px;
+  height: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.name-highlight {
+  color: crimson;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007b83;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: #005f65;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-image {
+    margin-top: 20px;
+  }
+
+  .profile-img {
+    width: 200px;
+  }
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  font-family: "Georgia", serif;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #492626;
+  gap: 0.5rem;
+}
+
+.logo-text {
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.corner {
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 3px solid #e63946; /* red color */
+  position: relative;
+}
+
+.top-left {
+  border-right: none;
+  border-bottom: none;
+}
+
+.bottom-right {
+  border-left: none;
+  border-top: none;
 }
