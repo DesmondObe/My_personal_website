@@ -65,32 +65,58 @@ main {
   flex: 1;
   text-align: justify;
 }
-
 .intro-image {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-photo {
   width: 250px;
-  height: 250px;
-  /* border-radius: 50%; */
+  height: auto;
+  border-radius: 8px;
   object-fit: cover;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .intro-flex {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .intro-image {
-    justify-content: center;
-    margin-top: 20px;
-  }
+/* Social tile buttons under image */
+.social-tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
 }
+
+.social-tile {
+  width: 90px;
+  height: 90px;
+  background-color: #007b83;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: 'Francois One', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.social-tile:hover {
+  background-color: #005f66;
+  transform: translateY(-4px);
+}
+
+.social-tile i {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.social-tile span {
+  font-size: 0.85rem;
+}
+
 
 main h2 {
   color: #007b83;
@@ -128,19 +154,40 @@ footer {
   font-size: 0.9em;
 }
 
-.social-links {
+.social-tile-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
   margin-top: 15px;
 }
 
-.social-links a {
-  color: #007b83;
+.social-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background-color: #e6f4f8;
+  border-radius: 8px;
   text-decoration: none;
+  color: #003366;
   font-weight: bold;
-  margin-right: 10px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
 
-.social-links a:hover {
-  text-decoration: underline;
+.social-tile:hover {
+  transform: translateY(-4px);
+  background-color: #d0eef9;
+}
+
+.social-tile img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 6px;
 }
 
 .cta-button {
